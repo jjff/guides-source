@@ -195,7 +195,7 @@ export default class PaymentMethodPaypalModel extends PaymentMethod {
       .slice(0, 5)
       .reverse()
       .join('');
-
+//? why not .slice(-5)  directly ?
     return `••••${last5}`;
   }
 }
